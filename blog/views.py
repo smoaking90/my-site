@@ -5,7 +5,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('Hello')
+    return render(request, 'blog/index.html')
 
 
 def posts(request):
