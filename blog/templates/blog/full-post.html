@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} This Post Title {% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'blog/full-post.css'%}">
+{% endblock %}
+
+{% block content %}
+
+<section id='summary'>
+    <h2>Post Title</h2>
+    <article>
+        <img src="{% static 'blog/images/mountains.jpg' %}" alt="Post Title">
+        <address>By Charlie</address>
+        <div>
+            Last updated on <time datetime="">January 7th</time>
+        </div>
+    </article>
+</section>
+
+<main>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero impedit unde eaque voluptatum, fugit deleniti
+        quia deserunt voluptas, eius optio dolores delectus? Inventore sint quisquam vel suscipit, qui quae.</p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, debitis aperiam officiis libero impedit non
+        quaerat totam recusandae optio et ab qui nisi sequi mollitia nulla! Illo esse ea vel?
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi consequatur cupiditate dolorum quibusdam dolorem
+        alias placeat ipsa culpa atque cum, delectus laboriosam velit, minima nemo sunt quaerat modi repellendus ullam!
+    </p>
+</main>
+
+{% endblock %}
